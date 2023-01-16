@@ -1,0 +1,7 @@
+## Statystyka
+
+Wiele się mówi o tym, że przy rozkładzie normalnym niewielkie różnice w&nbsp;średniej przekładają się na ogromne różnice na ekstremach. Jest to jeden z paradoksów społecznych. Mówi on dla przykładu, że jak mamy dwie grupy opisane rozkładem normalnym i&nbsp;jedna jest statystycznie nieco wyższa od drugiej, to gdy weźmiemy niewielki procent najwyższych osób z obu grup, to będą tam niemalże wyłącznie osobniki z tej nieco wyższej grupy. Zobaczmy, czy statystyka się z nami zgadza. 
+
+Pobawmy się jednak z prawdziwymi danymi. Dane z angielskiej Wikipedii wskazują, że statystyczny Polak ma 178.7 cm wzrostu, a&nbsp;Anglik 177 cm, czyli raptem 1.7 cm mniej. Dla obu tych populacji przyjmę odchylenie standardowe 6.35 cm, co oznacza, że 95% populacji Polski powinno znajdować się w&nbsp;przedziale od 166 cm (średnia - 2 * odchylenie standardowe) do&nbsp;191 cm (średnia + 2 * odchylenie standardowe). Opierając się na tych danych, jeśli weźmiemy na przykład 5000 losowych Polaków i&nbsp;5000 losowych Anglików, a&nbsp;następnie wytypujemy 100 najwyższych osób (czyli 1%), to ile wśród nich powinno być każdej z narodowości?
+
+Sprawmy statystyk użyłby wzorów na rozkład normalny by policzyć dokładny statystycznie wynik. My zaś użyjemy pakietu statistics z SciPy. 
