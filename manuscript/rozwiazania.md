@@ -403,6 +403,8 @@ for i in range(20, 0, -2):
     print(i)
 ```
 
+{pagebreak}
+
 ### Функції
 
 ```python
@@ -442,8 +444,11 @@ def days_to_millis(days):
 
 def triangle_area(a, b):
     return a * b / 2
+```
 
+{pagebreak}
 
+```python
 def biggest(a, b, c):
     if a >= b and a >= c:
         return a
