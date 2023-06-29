@@ -245,8 +245,6 @@ else:
 Може, щось вип’єте?
 ```
 
-{pagebreak}
-
 **Другий фрагмент, третій варіант**
 
 ```
@@ -415,8 +413,6 @@ def print_numbers(a, b):
         print(i)
 ```
 
-{pagebreak}
-
 ```python
 def print_stars(num):
     stars = ""
@@ -455,8 +451,6 @@ def biggest(a, b, c):
         return c
 ```
 
-{pagebreak}
-
 ```python
 def sum_range(a, b):
     res = 0
@@ -494,6 +488,8 @@ print(player.points)  # 0
 player.points = 1
 print(player.points)  # 1
 ```
+
+{pagebreak}
 
 ### Банківський рахунок
 
@@ -596,8 +592,6 @@ print(names)
 names[:-1] = ["Кася"]
 print(names)  # ['Кася', 'Галина']
 ```
-
-{pagebreak}
 
 ### Розмір і елементи списку
 
