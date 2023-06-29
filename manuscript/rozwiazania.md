@@ -604,6 +604,8 @@ names[:-1] = ["Кася"]
 print(names)  # ['Кася', 'Галина']
 ```
 
+{pagebreak}
+
 ### Розмір і елементи списку
 
 ```python
@@ -645,6 +647,8 @@ print(letters)  # ['A', 'B', 'D', 'E']
 print(l1Copy)  # ['A', 'B']
 ```
 
+{pagebreak}
+
 ### Тапли
 
 ```python
@@ -677,6 +681,8 @@ for name in names:
     count += len(name)
 print(count)  # 20
 ```
+
+{pagebreak}
 
 ### `__str__`, `__repr__` i `__eq__`
 
