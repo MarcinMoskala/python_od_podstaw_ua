@@ -357,6 +357,8 @@ while i < 1000:
     i *= 3  # або i = i * 3
 ```
 
+{pagebreak}
+
 **Випиши квадрати послідовних цілих чисел, які менші за 1000.**
 
 ```python
@@ -482,6 +484,8 @@ def sum_range(a, b):
 - `doctor` — назви класів повинні починатися з великої літери.
 - `Dog` — правильна назва.
 
+{pagebreak}
+
 ### Класи та атрибути
 
 ```python
@@ -495,8 +499,6 @@ print(player.points)  # 0
 player.points = 1
 print(player.points)  # 1
 ```
-
-{pagebreak}
 
 ### Банківський рахунок
 
