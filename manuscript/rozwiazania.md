@@ -113,8 +113,6 @@ print(num)  # 20
 - `post_user_request` — правильна назва. Тут `post` відноситься до метода POST інтернет-протоколу HTTP.
 - `szkolenie_warszawa` — польські слова у назвах змінних не використовуються. Краща версія: `workshop_warsaw`.
 
-{pagebreak}
-
 ### Додавання та віднімання від значень змінних
 
 ```python
@@ -289,8 +287,6 @@ else:
 ```
 Категорія: Молодь
 ```
-
-{pagebreak}
 
 ### Складні логічні вирази
 
@@ -499,8 +495,6 @@ player.points = 1
 print(player.points)  # 1
 ```
 
-{pagebreak}
-
 ### Банківський рахунок
 
 Вдалою назвою було би `BankAccount`.
@@ -646,8 +640,6 @@ print(letters)  # ['A', 'B', 'D', 'E']
 print(l1Copy)  # ['A', 'B']
 ```
 
-{pagebreak}
-
 ### Тапли
 
 ```python
@@ -680,8 +672,6 @@ for name in names:
     count += len(name)
 print(count)  # 20
 ```
-
-{pagebreak}
 
 ### `__str__`, `__repr__` i `__eq__`
 

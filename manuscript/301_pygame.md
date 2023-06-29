@@ -168,7 +168,7 @@ draw_snake_part(12, 8)
 draw_snake_part(19, 19)
 ```
 
-{width: 70%}
+{width: 50%}
 ![](301_squares.png)
 
 ## Малювання кола
