@@ -17,7 +17,7 @@ state = GameState(
     snake=None,
     direction=None,
     food=None,
-    field_size=CUBES_NUM <!-- можливо CUBE_NUM? (być może CUBE_NUM?) -->,
+    field_size=CUBES_NUM
 )
 state.set_initial_position()
 ```

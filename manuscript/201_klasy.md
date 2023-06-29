@@ -76,7 +76,6 @@ print(cookie2.type)  # Food
 Визнач клас `Player`, який представлятиме гравців гри. Надай йому змінну `points` зі значенням `0`. Виведи кількість балів (має складати `0`), а потім додай один бал до атрибута `points` та виведи кількість балів ще раз (тепер вона має становити `1`).
 
 Відповіді [в кінці книги](https://kt.academy/pl/article/py-rozwiazania).
-<!-- я подивився правильну відповідь на сайті. у завданні нічого не сказано про створення екземпляру (обʼєкта) класу з іменем player, лише про змінну класу points. можливо так і треба, але я вирішив про це зазначити (Sprawdziłem poprawną odpowiedź na stronie. W zadaniu nie ma mowy o stworzeniu obiektu klasy o imieniu player, tylko o zmiennej klasy points. Być może tak ma być, ale postanowiłem zwrócić na to uwagę) -->
 
 ## Методи
 

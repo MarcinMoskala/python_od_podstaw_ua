@@ -117,7 +117,7 @@ print(-negative)  # 1
 Програмування допускає подвійне заперечення, що означає, що кожен послідовний знак заперечення змінює логічне значення на протилежне [^105_4].
 
 ```python
-printTrue <!-- пропущено круглі дужки навколо True (brakuje nawiasu wokół True) --> # True
+print(True) # True
 print(not True)  # False
 print(not not True)  # True
 print(not not not True)  # False

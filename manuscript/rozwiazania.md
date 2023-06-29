@@ -167,7 +167,7 @@ print("Вітаю")
 
 if gender == "female":
     print("Пані")
-if gender == "male":  # albo elif
+if gender == "male":  # або elif
     print("Пана")
 ```
 
@@ -182,7 +182,7 @@ text += "Вітаю"
 
 if gender == "female":
     text += " Пані"
-if gender == "male":  # albo elif
+if gender == "male":  # або elif
     text += " Пана"
 print(text)
 ```
@@ -219,6 +219,8 @@ else:
 Привіт, Голова Марек
 Може, щось вип’єте?
 ```
+
+{pagebreak}
 
 **Перший фрагмент, третій варіант**
 
@@ -354,7 +356,7 @@ while i < 100:
 i = 13
 while i < 1000:
     print(i)
-    i *= 3  # albo i = i * 3
+    i *= 3  # або i = i * 3
 ```
 
 **Випиши квадрати послідовних цілих чисел, які менші за 1000.**
@@ -363,7 +365,7 @@ while i < 1000:
 i = 0
 while i * i < 1000:
     print(i * i)
-    i += 1  # albo i = i + 1
+    i += 1  # або i = i + 1
 ```
 
 {pagebreak}
@@ -650,7 +652,7 @@ empty = tuple()
 print(len(empty))  # 0
 single = ("AAA",)
 print(single)  # ('AAA',)
-print(len(single))  # ('AAA') <!-- # 1 -->
+print(len(single))  # 1
 ```
 
 ### Ітерація та генераторні списки

@@ -246,9 +246,9 @@ print(money4)  # 10.0 EUR
 
 print(repr(money1))
 # Money(amount=10.0, currency='PLN')
-print(repr(money3))  # 10.0 PLN <!-- "# 10.0 PLN" зайвий (zbędny) -->
+print(repr(money3))
 # Money(amount=20.0, currency='PLN')
-print(repr(money4))  # 10.0 EUR <!-- "# 10.0 EUR" зайвий (zbędny) -->
+print(repr(money4))
 # Money(amount=10.0, currency='EUR')
 ```
 
