@@ -527,6 +527,8 @@ print(account1.balance)  # 1000
 print(account2.balance)  # 0
 ```
 
+{pagebreak}
+
 ### Створення і редагування списків
 
 ```python
