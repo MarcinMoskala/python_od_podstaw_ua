@@ -23,7 +23,7 @@ print("Підсмаж м’ясо")
 print("Підсмаж булочку")
 print("Додай помідор")
 print("З’їж бургер")
-print("Пограй у&nbsp;гру")
+print("Пограй у гру")
 print("Іди спати")
 ```
 
@@ -46,7 +46,7 @@ print("Працюй")
 make_and_eat_hamburger()  # Використання функції
 print("Працюй")
 make_and_eat_hamburger()  # Використання функції
-print("Пограй у&nbsp;гру")
+print("Пограй у гру")
 print("Іди спати")
 ```
 
@@ -115,7 +115,7 @@ print("5")  # 5
 second_function()
 print("8")  # 8
 
-# Буде виведено по&nbsp;черзі 1 2 3 4 5 6 7 8
+# Буде виведено по черзі 1 2 3 4 5 6 7 8
 ```
 
 Варто витратити трохи часу і спробувати уявити, як&nbsp;наша програма рухається рядок за рядком, переходить до функції, а потім повертається туди, де&nbsp;її було викликано.
@@ -159,7 +159,7 @@ b()
 #  Traceback (most recent call last):
 #    File "<input>", line 1, in <module>
 #  TypeError: b() takes exactly 1 argument (0 given)
-print("Це не&nbsp;буде виведено")
+print("Це не буде виведено")
 ```
 
 ### Вправа: Функції
@@ -282,7 +282,7 @@ print(absolute(-10))  # 10
 ```python
 def square(x):
     return x * x
-    print("Це ніколи не&nbsp;буде виведено ")
+    print("Це ніколи не буде виведено ")
 
 
 def absolute(x):

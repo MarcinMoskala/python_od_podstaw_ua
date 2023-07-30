@@ -115,7 +115,7 @@
 [3] *Software developement in Ukraine, Poland, Belarus and Romania*, звіт ABSL за N-iX, посилання: https://www.n-ix.com/software-development-poland-warsaw-krakow-wroclaw/
 
 
-[4] Управління статистики у&nbsp;Варшаві, *Статистичний огляд Варшави, III квартал 2019 року*, Рік XXVIII, № 3, Варшава 2019 р., стан на&nbsp;30 вересня 2019 року, посилання: bit.ly/3xltyMD (звіт можна знайти на&nbsp;сторінці warszawa.praca.gov.pl)
+[4] Управління статистики у&nbsp;Варшаві, *Статистичний огляд Варшави, III квартал 2019 року*, Рік XXVIII, №&nbsp;3, Варшава 2019 р., стан на&nbsp;30 вересня 2019 року, посилання: bit.ly/3xltyMD (звіт можна знайти на&nbsp;сторінці warszawa.praca.gov.pl)
 
 
 [5] *Central & Eastern Europe Developer Landscape 2017 — a report by Stack Overflow*, звіт Infoshare на&nbsp;основі даних, зібраних Stack Overflow, посилання: infoshare.pl/news/one,66,246,1,central-eastern-europe-developer-landscape-2017-a-report-by-stack-overflow.html

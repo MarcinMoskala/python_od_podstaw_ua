@@ -192,7 +192,7 @@ self.snake.append(new_head)
 Якщо нове положення "голови" має бути вгорі, то від змінної `y` ми&nbsp;повинні відняти 1. Якщо внизу — додати 1. Якщо ліворуч, то від змінної `x` ми&nbsp;повинні відняти 1. Якщо праворуч — додати 1. Ми&nbsp;можемо реалізувати це, використовуючи конструкцію if з&nbsp;elif.
 
 ```python
-# Метод у&nbsp;класі GameState
+# Метод у класі GameState
 def next_head(self, direction):
     pos = self.snake[-1]
     if direction == Direction.UP:
@@ -210,7 +210,7 @@ def next_head(self, direction):
 Ми будемо використовувати цей метод у&nbsp;`step`.
 
 ```python
-# Метод у&nbsp;класі GameState
+# Метод у класі GameState
 def step(self):
     new_head = self.next_head(self.direction)
     self.snake.append(new_head)
@@ -276,7 +276,7 @@ def test_snake_should_move_right_on_edge(self):
 Для того, щоб наш код працював, нам загалом потрібна лише невелика зміна під час&nbsp;визначення нових координат у&nbsp;функції `next_head`. Якщо після зміни будь-яка точка координат може становити -1, то замість цього вона має бути `field_size — 1`, тобто за замовчуванням 19. Якби вона мала 20, то становила би 0. Пам’ятаєш оператор залишку від ділення `%`? Щоб&nbsp;нагадати, як&nbsp;він працює: `123 % 5` буде `3`, оскільки найбільша кратність числа `5`, менша ніж `123` — `120`. Тож залишається `3` як&nbsp;остача від ділення. Що важливо, `20 % 20 == 0`, а `-1 % 20 == 19`. Цей оператор ідеально відповідає нашим потребам. Після додавання або віднімання від позиції `x` або `y` ми&nbsp;повинні виконати операцію остачі від ділення на&nbsp;`field_size`.
 
 ```python
-# Метод у&nbsp;класі GameState
+# Метод у класі GameState
 def next_head(self, direction):
     pos = self.snake[-1]
     if direction == Direction.UP:
@@ -308,7 +308,7 @@ def next_head(self, direction):
 Коли "змійка" з’їдає кульку, вона повинна збільшитися, а нова "їжа" — з’явитися у&nbsp;випадковому місці на&nbsp;полі. Почнімо з&nbsp;першої частини цього завдання. Якщо ми&nbsp;поставимо "змійку" так, що&nbsp;на&nbsp;наступному кроці вона дістається до "їжі", то після виклику функції `step`, вона має збільшуватися. Ми&nbsp;могли би перевірити це, порівнявши попередню та&nbsp;нову довжину "змійки", але ще точніше буде перевірити, чи новий стан змінної `snake` відповідає нашим очікуванням.
 
 ```python
-# Новий метод у&nbsp;класі GameStateTest
+# Новий метод у класі GameStateTest
 def test_snake_eats_food(self):
     state = GameState(
         snake=[
@@ -335,7 +335,7 @@ def test_snake_eats_food(self):
 Зауваж, що&nbsp;єдина зміна, порівняно з&nbsp;попередніми кроками, полягає у&nbsp;тому, що&nbsp;ми&nbsp;не позбавляємося "хвоста" "змійки". Тобто "змійка" подовжується: "голова" додається, а "хвіст" залишається незмінним. Отже, ми&nbsp;повинні позбуватися кінчика "хвоста", лише тоді, коли нове положення "голови" не&nbsp;збігається з&nbsp;розташуванням "їжі".
 
 ```python
-# Метод у&nbsp;класі GameState
+# Метод у класі GameState
 def step(self):
     new_head = self.next_head(self.direction)
     self.snake.append(new_head)
@@ -353,7 +353,7 @@ self.assertEqual(False, state.food in state.snake)
 Як це&nbsp;реалізувати? На останньому кроці ми&nbsp;вже навчилися перевіряти, чи знайшла "змійка" "їжу". Якщо вона її&nbsp;знайшла, ми&nbsp;повинні задати "їжі" нове положення. Ми&nbsp;можемо об’єднати це&nbsp;з&nbsp;попередньо написаною умовою в&nbsp;одну інструкцію if із блоком else. Нове розташування "їжі" ми&nbsp;задамо в&nbsp;окремій функції `set_random_food_position`.
 
 ```python
-# Метод у&nbsp;класі GameState
+# Метод у класі GameState
 def step(self):
     new_head = self.next_head(self.direction)
 
@@ -371,7 +371,7 @@ def step(self):
 from random import randint
 
 
-# Новий метод у&nbsp;класі GameState
+# Новий метод у класі GameState
 def set_random_food_position(self):
     self.food = Position(
         randint(0, self.field_size — 1),
@@ -410,7 +410,7 @@ def set_random_food_position(self):
 Коли "змійка" наступає на&nbsp;власний "хвіст", вона повинна повернутися до початкового стану (і так по&nbsp;колу). Поки що&nbsp;ми&nbsp;не визначили початкову позицію чи напрямок, але, думаю, настав час&nbsp;це зробити. Я визначу їх як&nbsp;змінну у&nbsp;файлі `game_state.py`.
 
 ```python
-# Нові змінні у&nbsp;файлі game_state.py
+# Нові змінні у файлі game_state.py
 INITIAL_SNAKE = [
     Position(1, 2),
     Position(2, 2),
@@ -422,7 +422,7 @@ INITIAL_DIRECTION = Direction.RIGHT
 У тесті ми&nbsp;можемо імпортувати ці значення, щоб перевірити, чи були вони використані після зіткнення "змійки" з&nbsp;власним "хвостом". До&nbsp;цього я додам перевірку, чи "їжа" не&nbsp;розміщується всередині "змійки", та&nbsp;чи випадково не&nbsp;змінився розмір поля (хоча це&nbsp;не&nbsp;обов’язково).
 
 ```python
-# Новий метод у&nbsp;класі GameStateTest
+# Новий метод у класі GameStateTest
 def test_snake_dies(self):
     state = GameState(
         snake=[
@@ -459,7 +459,7 @@ collision = new_head in self.snake
 Якщо так, то сталося зіткнення. У цьому випадку ми&nbsp;повинні повернути "змійку" в&nbsp;початкове положення і відмовитися від решти етапів руху. Ключовим словом `return` ми&nbsp;можемо завершити виклик функції `step` на&nbsp;цьому кроці.
 
 ```python
-# Метод у&nbsp;класі GameState
+# Метод у класі GameState
 def step(self):
     new_head = self.next_head(self.direction)
 
@@ -479,7 +479,7 @@ def step(self):
 Залишилося реалізувати `set_initial_position`. Ця функція повинна повернути "змійку" у&nbsp;вихідне положення, задати початковий напрямок і вибрати нове випадкове місце для "їжі". При розміщенні "змійки" за допомогою `INITIAL SNAKE` варто зробити копію через `[:]`, щоб захистити цю змінну від внутрішніх змін. Без цього наш виклик `append` у&nbsp;`step` міг би змінити `INITIAL_SNAKE`, що&nbsp;призвело б до неправильного скидання гри.
 
 ```python
-# Новий метод у&nbsp;класі GameState
+# Новий метод у класі GameState
 def set_initial_position(self):
     self.snake = INITIAL_SNAKE[:]
     self.direction = INITIAL_DIRECTION

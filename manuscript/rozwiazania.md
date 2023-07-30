@@ -51,11 +51,11 @@ print(1 * (2 + 3) * (4 + 5) * (6 + 7) * (8 + 9))
 print(1 * 2 / 3 * 4 / 5 * 6 / 7 * 8 / 9 * 10)
 # 4.063492063492064
 # мало бути більше, ніж 1,
-№ тому що&nbsp;останнім виконується множення.
+№ тому що останнім виконується множення.
 print(2 ** 10)  # 1024
-# це&nbsp;дуже відоме число в&nbsp;програмуванні
-# "кіло" в&nbsp;інформатиці зазвичай означає 1024,
-# тоді як&nbsp;в інших сферах — 1000.
+# це дуже відоме число в програмуванні
+# "кіло" в інформатиці зазвичай означає 1024,
+# тоді як в інших сферах — 1000.
 ```
 
 ### Python як&nbsp;калькулятор порівняння
@@ -131,7 +131,7 @@ price += 2.8
 print(fruits)  # Інжир Груша Банан
 print(price)  # 6.0
 
-fruits += "(купон на&nbsp;знижку)"
+fruits += "(купон на знижку)"
 price -= 1.4
 
 print(price)  # 4.6
@@ -171,7 +171,7 @@ if gender == "male":  # або elif
     print("Пана")
 ```
 
-Рішення в&nbsp;одному рядку:
+Рішення в одному рядку:
 
 ```python
 text = ""
@@ -187,7 +187,7 @@ if gender == "male":  # або elif
 print(text)
 ```
 
-### Вправа: else та&nbsp;elif
+### Вправа: else та elif
 
 ```python
 # Приклади значень
@@ -300,32 +300,32 @@ passed_test = False
 is_grounded = False
 
 print(has_computer and passed_test)
-# False, тому що&nbsp;True and False
+# False, тому що True and False
 print(passed_test or is_grounded)
-# False, тому що&nbsp;False or False
+# False, тому що False or False
 print(has_computer and not passed_test)
-# True, тому що&nbsp;True and !False
+# True, тому що True and !False
 
 can_play_games = has_computer and not is_grounded
-# True, тому що&nbsp;True and !False,
+# True, тому що True and !False,
 # а отже True and True
 print(can_play_games)  # True
 
 play_games = has_computer and can_play_games
-# True, тому що&nbsp;True and True
+# True, тому що True and True
 
 if not passed_test:
     is_grounded = True
 
 print(play_games)  # True,
-# оскільки, коли визначалося це&nbsp;значення,
+# оскільки, коли визначалося це значення,
 # is_grounded було False
 print(passed_test or not is_grounded)
-# False, тому що&nbsp;False or !True,
+# False, тому що False or !True,
 # оскільки поточне значення is_grounded — True
 print(not (not has_computer or not passed_test))
-# False, тому що&nbsp;True and False,
-# оскільки !(!a or !b) означає те ж, що&nbsp;й a and b
+# False, тому що True and False,
+# оскільки !(!a or !b) означає те ж, що й a and b
 ```
 
 ### Математичні послідовності
@@ -664,7 +664,7 @@ print(single)  # ('AAA',)
 print(len(single))  # 1
 ```
 
-### Ітерація та&nbsp;генераторні списки
+### Ітерація та генераторні списки
 
 ```python
 names = ["міхал", "неля", "оля", "пшемек"]

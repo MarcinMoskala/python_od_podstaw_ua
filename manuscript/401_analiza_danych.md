@@ -130,7 +130,7 @@ from pandas import read_csv
 
 titanic_df = read_csv("titanic.csv")
 
-# Кількість осіб у&nbsp;​​класах
+# Кількість осіб у класах
 class_counts = titanic_df["PClass"]\
     .value_counts()\
     .sort_index()

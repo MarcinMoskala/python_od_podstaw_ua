@@ -142,7 +142,7 @@ cleaned_room = False
 # Не завалив іспит і прибрав кімнату
 print(not failed_math_test and cleaned_room)  # False
 
-# Не є правдою, що&nbsp;
+# Не є правдою, що
 # завалив іспит і прибрав кімнату
 print(not (failed_math_test and cleaned_room))  # True
 ```

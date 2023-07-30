@@ -188,7 +188,7 @@ print(user1 != user3)  # True
 ```
 
 ```python
-# Оператор `is` не&nbsp;змінює поведінку
+# Оператор `is` не змінює поведінку
 print(user1 is user1)  # True
 print(user1 is user2)  # False
 print(user1 is user3)  # False

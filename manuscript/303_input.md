@@ -93,7 +93,7 @@ while True:
 Для цього ми&nbsp;будемо використовувати функцію `turn`, яка змінюватиме напрям руху "змійки", але тільки якщо новий напрямок буде дозволено. Почнемо з&nbsp;тесту, який перевірить, чи працює наша функція. Ми&nbsp;поставимо "змійку" в&nbsp;таке ж положення, як&nbsp;перед смертю під час&nbsp;тесту `test_snake_dies`. Справа в&nbsp;тому, що&nbsp;наша функція перевіряла лише, щоб "змійка" не&nbsp;наступала на&nbsp;своє власне тіло, але дозволяла їй наступати собі на&nbsp;"хвіст". У цій конфігурації "змійка" може повертати вгору (що означало би її&nbsp;смерть), ліворуч і вниз. Однак вона не&nbsp;може повернути праворуч, тому що&nbsp;вона звідти йде.
 
 ```python
-# Новий метод у&nbsp;GameStateTest
+# Новий метод у GameStateTest
 def test_turn(self):
     state = GameState(
         snake=[
@@ -119,14 +119,14 @@ def test_turn(self):
 
     state.turn(Direction.RIGHT)
     # Лишається старе значення,
-    # тому що&nbsp;не&nbsp;можна повертати праворуч
+    # тому що не можна повертати праворуч
     self.assertEqual(Direction.DOWN, state.direction)
 ```
 
 Логіка цієї функції проста. Якщо "змійка" може повернути в&nbsp;певному напрямку, вона повинна це&nbsp;зробити.
 
 ```python
-# Новий метод у&nbsp;класі GameState
+# Новий метод у класі GameState
 def turn(self, direction):
     if self.can_turn(direction):
         self.direction = direction
@@ -135,7 +135,7 @@ def turn(self, direction):
 Цей метод залежить від метода `can_turn`, на&nbsp;якому ми&nbsp;зараз зосередимося. Але почнемо знову з&nbsp;тесту.
 
 ```python
-# Новий метод у&nbsp;класі GameStateTest
+# Новий метод у класі GameStateTest
 def test_can_turn(self):
     state = GameState(
         snake=[
@@ -171,7 +171,7 @@ def test_can_turn(self):
 Як написати такий метод? Як уже згадувалося, найпростіший спосіб — перевірити, чи нове положення "голови" "змійки" не&nbsp;збігається з&nbsp;положенням "шиї", тобто фрагментом "змійки", розташованим одразу перед "головою". "Шия" - це&nbsp;`snake[-2]`, нове положення "голови" можна визначити за допомогою `next_head`, а для порівняння можна використати знак `!=`.
 
 ```python
-# Новий метод у&nbsp;класі GameState
+# Новий метод у класі GameState
 def can_turn(self, direction):
     new_head = self.next_head(direction)
     return new_head != self.snake[-2]

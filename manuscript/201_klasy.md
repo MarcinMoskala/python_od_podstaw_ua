@@ -87,13 +87,15 @@ class User:
         print(f"Привіт, мене звати {self.name}")
 
     def say_hello(self, other):
-        print(f"Привіт, {other}, мене звати {self.name}")
+        name=self.name;
+        print(f"Привіт, {other}, мене звати {name}")
 
 
 user = User()
 user.name = "Мацєк"
 user.cheer()  # Привіт, мене звати Мацєк
-user.say_hello("Марта")  # Привіт, Марта, мене звати Мацєк
+user.say_hello("Марта")  
+# Привіт, Марта, мене звати Мацєк
 ```
 
 Об’єкт `self` можна використати також для зміни атрибутів даного об’єкта.
