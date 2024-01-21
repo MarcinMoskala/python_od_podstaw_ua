@@ -21,7 +21,7 @@ dotyczących płci czy koloru skóry. Zawiera jednak dokładną datę i&nbsp;god
 geograficzne), typ przestępstwa, informację czy doszło do&nbsp;aresztowania i&nbsp;czy było to przestępstwo domowe.
 
 Dane analizować będziemy przy użyciu pakietu Pandas. Ponieważ pobraliśmy je w&nbsp;formacie CSV, użyjemy
-funkcji `read_csv`, dzięki czemu otrzymamy obiekt zwany DataFrame, który pozwoli nam analizować dane.
+funkcji&nbsp;`read_csv`, dzięki czemu otrzymamy obiekt zwany DataFrame, który pozwoli nam analizować dane.
 
 ```python
 from pandas import read_csv
@@ -62,7 +62,7 @@ crimes_df.to_csv("Crimes.csv")
 
 > Możesz pominąć te kroki i&nbsp;bezpośrednio pobrać przetworzone dane od 1.1.2001 do&nbsp;26.1.2021 ze strony []().
 
-Udało nam się ograniczyć rozmiar naszych danych do&nbsp;XXX. Odczytajmy je funkcją `read_csv`. Od tego momentu już na nich
+Udało nam się ograniczyć rozmiar naszych danych do&nbsp;XXX. Odczytajmy je funkcją&nbsp;`read_csv`. Od tego momentu już na nich
 będziemy operować:
 
 ```python
@@ -92,7 +92,7 @@ crimes_df["Arrest"].value_counts() / len(crimes_df)
 
 Wygląda na to, że tylko 27% przestępstw kończy się aresztowaniem. Nie odpowiada to na pytanie
 
-Zacznijmy może od tego, jakiego typu przestępstwa są w&nbsp;naszym zbiorze. Pomocna będzie funkcja `value_counts`, która
+Zacznijmy może od tego, jakiego typu przestępstwa są w&nbsp;naszym zbiorze. Pomocna będzie funkcja&nbsp;`value_counts`, która
 liczy wystąpienia każdej z wartości w&nbsp;kolumnie.
 
 ```python
@@ -111,7 +111,7 @@ crimes_df["Primary Type"].value_counts()
 ```
 
 Nie jesteśmy jednak stworzeni do&nbsp;oglądania liczb. Więcej mówią nam wykresy. Aby narysować wykres liczby przestępstw,
-potrzebujemy zainstalować pakiet `matplotlib`. Przy jego użyciu następująco możemy narysować wykres liczby przestępstw
+potrzebujemy zainstalować pakiet&nbsp;`matplotlib`. Przy jego użyciu następująco możemy narysować wykres liczby przestępstw
 wg głównego typu.
 
 ```python
