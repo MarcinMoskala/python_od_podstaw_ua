@@ -231,7 +231,7 @@ while True:
 * додати екран із демонстрацією результату після смерті "змійки";
 * додати перелік найкращих результатів (що потребує зберігання результатів на&nbsp;диску).
 
-[https://github.com/MarcinMoskala/snake](https://github.com/MarcinMoskala/snake)
+https://github.com/MarcinMoskala/snake
 
 {width: 20%}
 ![Замість посилання можна скористатися цим QR-кодом.](qr0.png)

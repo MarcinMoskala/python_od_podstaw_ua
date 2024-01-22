@@ -10,7 +10,7 @@
 
 Спокійно, ми&nbsp;впораємось. Те, чого ми&nbsp;ще не&nbsp;знаємо, дізнаємося в&nbsp;дорозі. Тільки тримайся міцніше, щоб не&nbsp;заблукати. Однак, якщо так станеться, код після кожного розділу цієї частини можна знайти за&nbsp;посиланням:
 
-[https://github.com/MarcinMoskala/snake](https://github.com/MarcinMoskala/snake)
+https://github.com/MarcinMoskala/snake
 
 {width: 20%}
 ![Замість посилання можна скористатися цим QR-кодом.](qr0.png)
