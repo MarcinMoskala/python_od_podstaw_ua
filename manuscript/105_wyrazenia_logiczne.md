@@ -197,7 +197,7 @@ print(passed_test or not is_grounded)
 print(not (not has_computer or not passed_test))
 ```
 
-Відповіді [в кінці книги](https://kt.academy/pl/article/py-rozwiazania).
+Відповіді в кінці книги.
 
 [^105_1]: "and" з&nbsp;англійської перекладається як&nbsp;"i".
 [^105_2]: Точніше кажучи, увесь вираз truthy, коли обидві частини truthy. Однак ми&nbsp;не будемо говорити про значення як&nbsp;truthy або falsy.

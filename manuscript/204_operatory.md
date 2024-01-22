@@ -266,7 +266,7 @@ fakeMoney = FakeMoney(10, "PLN")
 print(money == fakeMoney)  # False
 ```
 
-Відповіді [в кінці книги](https://kt.academy/pl/article/py-rozwiazania).
+Відповіді в кінці книги.
 
 ## Математичні дії та&nbsp;порівняння
 

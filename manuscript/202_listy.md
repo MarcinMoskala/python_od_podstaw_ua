@@ -91,7 +91,7 @@ print(pets)  # _______
 print(pet)  # _______
 ```
 
-Відповіді [в кінці книги](https://kt.academy/pl/article/py-rozwiazania).
+Відповіді в кінці книги.
 
 ## Звертання до елементів списку
 
@@ -289,7 +289,7 @@ print(len(numbers))  # ___
 print(numbers[3])  # ___
 ```
 
-Відповіді [в кінці книги](https://kt.academy/pl/article/py-rozwiazania).
+Відповіді в кінці книги.
 
 ### Перевірка наявності елемента в&nbsp;списку
 
@@ -429,7 +429,7 @@ print(single)  # ('AAA',)
 print(len(single))  # ___
 ```
 
-Відповіді [в кінці книги](https://kt.academy/pl/article/py-rozwiazania).
+Відповіді в кінці книги.
 
 ### Завершення
 

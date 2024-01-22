@@ -41,13 +41,13 @@ points = _______
 print(points)  # 123
 ```
 
-Відповіді [в кінці книги](https://kt.academy/pl/article/py-rozwiazania).
+Відповіді в кінці книги.
 
 ### Вправа: Визначення змінних 2
 
 Визнач змінну з&nbsp;назвою `num` і надай їй значення `10`. Виведи це&nbsp;значення за допомогою функції `print`. Потім надай змінній `num` значення `20` і знову виведи це&nbsp;значення.
 
-Відповіді [в кінці книги](https://kt.academy/pl/article/py-rozwiazania).
+Відповіді в кінці книги.
 
 ## Називання змінних
 
@@ -93,7 +93,7 @@ print(points)  # 123
 - `post_user_request`
 - `szkolenie_warszawa`
 
-Відповіді [в кінці книги](https://kt.academy/pl/article/py-rozwiazania).
+Відповіді в кінці книги.
 
 ## Надання значень, які розширюють змінну
 
@@ -218,7 +218,7 @@ price __ 1.4
 print(price)  # 4.6
 ```
 
-Відповіді [в кінці книги](https://kt.academy/pl/article/py-rozwiazania).
+Відповіді в кінці книги.
 
 ## Змінні які вказують на&nbsp;значення
 
@@ -381,6 +381,6 @@ print(name)  # ______
 print(surname)  # ________
 ```
 
-Відповіді [в кінці книги](https://kt.academy/pl/article/py-rozwiazania).
+Відповіді в кінці книги.
 
 
