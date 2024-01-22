@@ -172,7 +172,9 @@ print(titanic_df\
 #         male      0.145349
 # 3rd     female    0.377358
 #         male      0.116232
+```
 
+```python
 # Виживання за віком
 from pandas import cut
 
